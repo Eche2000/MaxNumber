@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+let maxNumber = 200;
+for (let i = 1; i <= maxNumber; i++) {
+	//number is divisible by 6 but not 8
+	if (i % 6 === 0 && i % 8 !== 0) {
+		console.log('shams');
+
+		//number is divisible by 8 but not 6
+	} else if (i % 8 === 0 && i % 6 !== 0) {
+		console.log('TIIDELab');
+
+		//number is divisible by both 8 and 6
+	} else if (i % 8 === 0 && i % 6 === 0) {
+		console.log('shamsTIIIDELab');
+	} else {
+		console.log(i);
+	}
+}
+</script>
+</body>
+</html>
